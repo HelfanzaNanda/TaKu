@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context=".activity.ReportActivity">
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_margin="@dimen/_7sdp"
+            android:id="@+id/title_template"
+            android:fontFamily="@font/robotobold"
+            android:textSize="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Laporkan permasalahanmu"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <EditText
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/isi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jelaskan detail permasalahanmu"
+            app:layout_constraintTop_toBottomOf="@id/title_template" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/form"
+        android:src="@drawable/manreport"/>
+
+<Button
+    android:layout_margin="@dimen/_10sdp"
+    android:id="@+id/submit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="kirim"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

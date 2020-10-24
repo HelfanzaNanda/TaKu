@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SkmActivity">
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="@dimen/_420sdp"
+        android:layout_height="@dimen/_176sdp"
+        android:src="@drawable/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="@dimen/_305sdp"
+        android:layout_height="@dimen/_99sdp"
+        android:src="@drawable/ic_path_20"
+        app:layout_constraintBottom_toBottomOf="@+id/head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_133sdp"
+        android:src="@drawable/ic_path_21"
+        app:layout_constraintBottom_toBottomOf="@+id/head"
+        app:layout_constraintEnd_toEndOf="@+id/head"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/head"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="@dimen/_117sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/feedback"
+        app:layout_constraintBottom_toBottomOf="@+id/head"
+        app:layout_constraintEnd_toEndOf="@+id/head"
+        app:layout_constraintStart_toStartOf="@+id/head" />
+
+    <TextView
+        android:id="@+id/txtskm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/skm"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353" />
+
+
+    <TextView
+        android:id="@+id/texts1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="@dimen/_6sdp"
+        android:text="Beri penilaian terhadap pelayanan kami"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/head" />
+    <TextView
+        android:id="@+id/texts2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_6sdp"
+        android:text="Respon anda membantu kami dalam memaksimalkan pelayanan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texts1" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_2sdp"
+    android:layout_margin="@dimen/_6sdp"
+    android:background="#C5C3C3"
+    app:layout_constraintTop_toBottomOf="@id/texts2"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/texts2"
+        tools:layout_editor_absoluteX="-9dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/head">
+            <ImageView
+                android:id="@+id/baik"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:src="@drawable/satu"/>
+            <ImageView
+                android:id="@+id/cukup"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:src="@drawable/dua"/>
+            <ImageView
+                android:id="@+id/kurang"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:src="@drawable/tiga"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

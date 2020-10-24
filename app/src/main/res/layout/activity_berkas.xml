@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".activity.BerkasActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="@dimen/_420sdp"
+            android:layout_height="@dimen/_176sdp"
+            android:src="@drawable/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="@dimen/_305sdp"
+            android:layout_height="@dimen/_99sdp"
+            android:src="@drawable/ic_path_20"
+            app:layout_constraintBottom_toBottomOf="@+id/head"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.707"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_133sdp"
+            android:src="@drawable/ic_path_21"
+            app:layout_constraintBottom_toBottomOf="@+id/head"
+            app:layout_constraintEnd_toEndOf="@+id/head"
+            app:layout_constraintHorizontal_bias="0.169"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/head"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="117dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="36dp"
+            android:src="@drawable/berkas"
+            app:layout_constraintBottom_toBottomOf="@+id/head"
+            app:layout_constraintEnd_toEndOf="@+id/head"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="@+id/head" />
+
+        <TextView
+            android:id="@+id/txtberkas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Kirim Berkas"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.101"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.353" />
+
+        <TextView
+            android:id="@+id/txtsubberkas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Foto berkas Dokumen yang diperlukan"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.142"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.553" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/head"
+            tools:layout_editor_absoluteX="-1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="50dp">
+
+                <TextView
+                    android:id="@+id/ktp_meninggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ktp_meninggal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/img_Ktp_Meninggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/ktp_meninggal" />
+
+                <TextView
+                    android:id="@+id/kk_meninggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/kk_meninggal" />
+
+                <ImageView
+                    android:id="@+id/img_kk_meninggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/kk_meninggal" />
+
+                <TextView
+                    android:id="@+id/jamkesmas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/jamkesmas" />
+
+                <ImageView
+                    android:id="@+id/img_jamkesmas"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/kk_meninggal" />
+
+                <TextView
+                    android:id="@+id/ktp_waris"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/ktp_ahli_waris" />
+
+                <ImageView
+                    android:id="@+id/img_ktp_waris"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/kk_meninggal" />
+
+                <TextView
+                    android:id="@+id/kk_waris"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kk_ahli_waris" />
+
+                <ImageView
+                    android:id="@+id/img_kk_waris"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg" />
+
+                <TextView
+                    android:id="@+id/akta_kematian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/akta_kematian" />
+
+                <ImageView
+                    android:id="@+id/img_Akta_kematian"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/kk_meninggal" />
+
+                <TextView
+                    android:id="@+id/pernyataan_waris"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/surat_pernyataan_waris" />
+
+                <ImageView
+                    android:id="@+id/img_pernyataan_waris"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/kk_meninggal" />
+
+                <TextView
+                    android:id="@+id/integritas_waris"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/pakta_integritas_ahli_waris" />
+
+                <ImageView
+                    android:id="@+id/img_integritas_waris"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/kk_meninggal" />
+
+                <TextView
+                    android:id="@+id/buku_tabungan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="buku Tabungan" />
+
+                <ImageView
+                    android:id="@+id/img_buku_tabungan"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/kk_meninggal" />
+
+                <CheckBox
+                    android:id="@+id/cb_sure"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Dukumen yang saya kirim sah sesui
+syarat dan ketentuan yang berlaku,
+apa bila dikumudian hari mengalami
+permasalahan hukum maka saya siap
+bertanggung jawab sepenuhnya." />
+
+                <Button
+                    android:id="@+id/btn_kirim"
+                    android:layout_gravity="center"
+                    android:layout_margin="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kirim" />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

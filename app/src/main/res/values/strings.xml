@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BangDu Masyarakat</string>
+    <string name="info_activate">Aktivasi akun anda</string>
+    <string name="info_activate_desc">Lorem ipsum dolor sit amet consectuer. Lorem ipsum dolor sit amet consectuer.</string>
+    <string name="hint_nik">Masukkan NIK</string>
+    <string name="hint_kk">Masukkan nomor KK</string>
+    <string name="btn_activate">Aktivasi</string>
+    <string name="title">Bangdu</string>
+    <string name="subTitle">Bantuan Uang Duka</string>
+    <string name="hint_password">password</string>
+    <string name="btn_login">login</string>
+    <string name="txtAktivasi_akun">Aktivasi Akun</string>
+    <string name="tvNama">Nama :</string>
+    <string name="kk">KK   :</string>
+    <string name="pngBerkas">pngBerkas</string>
+    <string name="menu1">Kirim Berkas</string>
+    <string name="ktp_meninggal">KTP Meninggal</string>
+    <string name="common_understand">Mengerti</string>
+    <string name="validation_berkas">Pastikan anda telah memilih semua berkas</string>
+    <string name="kk_meninggal">KK Meninggal</string>
+    <string name="jamkesmas">Jamkesmas</string>
+    <string name="ktp_ahli_waris">Ktp Ahli Waris</string>
+    <string name="kk_waris">KK Waris</string>
+    <string name="kk_ahli_waris">KK Ahli Waris</string>
+    <string name="akta_kematian">Akta Kematian</string>
+    <string name="surat_pernyataan_waris">Surat Pernyataan Waris</string>
+    <string name="pakta_integritas_ahli_waris">Pakta integritas ahli waris</string>
+    <string name="skm">Survey</string>
+    <string name="confirmed">Diterima</string>
+    <string name="confirmedgagal">Ditolak</string>
+    <string name="confirmedwaiting">Sedang Diproses</string>
+    <string name="disdukcapil">Disdukcapil</string>
+    <string name="buku_tabungan">Buku Tabungan</string>
+    <string name="keterangan">Data tidak valid :</string>
+    <string name="PegawaiDisdukcapil">Dinas Kependudukan dan Pencatatan Sipil</string>
+    <string name="PegawaiBakeuda">Badan Kuangan Daerah</string>
+    <string name="StatusI">Diterima</string>
+    <string name="StatusII">Ditolak</string>
+
+</resources>

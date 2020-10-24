@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "73488680298",
+    "firebase_url": "https://bandu-5e021.firebaseio.com",
+    "project_id": "bandu-5e021",
+    "storage_bucket": "bandu-5e021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:73488680298:android:3f2030957481662136d113",
+        "android_client_info": {
+          "package_name": "mibnu.team.ta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "73488680298-aon7ufete0n4m3npj8te9uc395q4g58j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mibnu.team.ta",
+            "certificate_hash": "bf6cfc89bb6df7fbd16f003b80762f6c4cc84d4c"
+          }
+        },
+        {
+          "client_id": "73488680298-lgatbudfp9gcu5o2rdirqpscditkijlp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABhDbo9jUCr2BMKyxpc-O1ZUyEEjD3kuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "73488680298-lgatbudfp9gcu5o2rdirqpscditkijlp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

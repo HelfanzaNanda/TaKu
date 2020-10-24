@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:src="@drawable/card"
+            app:layout_constraintBottom_toTopOf="@id/menu"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/tvNama"
+            android:textColor="#fff"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="@id/card"
+            app:layout_constraintTop_toTopOf="@id/card" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/name"
+            app:layout_constraintStart_toEndOf="@id/name"
+            app:layout_constraintTop_toTopOf="@id/card"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+        android:id="@+id/nik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_45sdp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Nik     :"
+        android:textColor="#fff"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintStart_toStartOf="@id/card"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <TextView
+            android:id="@+id/tvNik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="164dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="#fff"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/nik"
+            app:layout_constraintStart_toEndOf="@id/nik"
+            app:layout_constraintTop_toTopOf="@id/card"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="Menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card" />
+
+        <View
+            app:layout_constraintTop_toBottomOf="@id/menu"
+            android:id="@+id/ul"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="#E1E1E1"/>
+        <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/kirimBerkas"
+        android:layout_width="139dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:background="@drawable/menubutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ul" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="59dp"
+        android:layout_height="53dp"
+        android:contentDescription="@string/pngBerkas"
+        android:src="@drawable/berkas"
+        app:layout_constraintBottom_toBottomOf="@+id/kirimBerkas"
+        app:layout_constraintEnd_toEndOf="@+id/kirimBerkas"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/kirimBerkas"
+        app:layout_constraintTop_toTopOf="@+id/kirimBerkas"
+        app:layout_constraintVertical_bias="0.372" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu1"
+        app:layout_constraintBottom_toBottomOf="@+id/kirimBerkas"
+        app:layout_constraintEnd_toEndOf="@+id/kirimBerkas"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/kirimBerkas"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/lacakBerkas"
+        android:layout_width="139dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="44dp"
+        android:background="@drawable/menubutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/kirimBerkas"
+        app:layout_constraintTop_toTopOf="@+id/kirimBerkas" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="57dp"
+        android:layout_height="52dp"
+        android:src="@drawable/inspection"
+        app:layout_constraintBottom_toBottomOf="@+id/lacakBerkas"
+        app:layout_constraintEnd_toEndOf="@+id/lacakBerkas"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/lacakBerkas"
+        app:layout_constraintTop_toTopOf="@+id/lacakBerkas"
+        app:layout_constraintVertical_bias="0.367" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="19dp"
+        android:text="Tracking Berkas"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lacakBerkas"
+        app:layout_constraintEnd_toEndOf="@+id/lacakBerkas"
+        app:layout_constraintStart_toStartOf="@+id/lacakBerkas"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/skm"
+        android:layout_width="139dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/menubutton"
+        app:layout_constraintStart_toStartOf="@id/kirimBerkas"
+        app:layout_constraintTop_toBottomOf="@+id/kirimBerkas" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="58dp"
+        android:layout_height="51dp"
+        android:src="@drawable/feedback"
+        app:layout_constraintBottom_toBottomOf="@+id/skm"
+        app:layout_constraintEnd_toEndOf="@+id/skm"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/skm"
+        app:layout_constraintTop_toTopOf="@+id/skm"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SKM"
+        app:layout_constraintBottom_toBottomOf="@+id/skm"
+        app:layout_constraintEnd_toEndOf="@+id/skm"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="@+id/skm"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/bantuan"
+        android:layout_width="139dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/menubutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/skm"
+        app:layout_constraintTop_toBottomOf="@+id/lacakBerkas" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="59dp"
+        android:layout_height="51dp"
+        android:src="@drawable/communication"
+        app:layout_constraintBottom_toBottomOf="@+id/bantuan"
+        app:layout_constraintEnd_toEndOf="@+id/bantuan"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="@+id/bantuan"
+        app:layout_constraintTop_toTopOf="@+id/bantuan"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bantuan"
+        app:layout_constraintBottom_toBottomOf="@+id/bantuan"
+        app:layout_constraintEnd_toEndOf="@+id/bantuan"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/bantuan"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.243" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
